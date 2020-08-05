@@ -4,7 +4,6 @@ class Owner
   attr_reader :name, :species
   @@all = []
 
-  #def initialize(species, pets= {:fishes => [], :dogs => [], :cats =>[]})
   def initialize(name)
     @name= name
     @species= "human"
