@@ -1,11 +1,12 @@
 class Cat
 
-  attr_reader :name, :owner
-  attr_accessor :mood
+  attr_reader :name
+  attr_accessor :mood, :owner
 
   def initialize(name, owner)
     @name = name
-    owner = Owner.new(name)
+    @owner = owner
+    owner.cats << self
   end
 
 end
